@@ -1,0 +1,448 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>API Automation Portfolio</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">User API Tests</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 13, 2026 12:51:14 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">POST User Test</p>
+            <p class="text-sm">
+              <span>12:51:14</span> / <span>00:00:01:147</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">POST User Test</h5>
+<span class='badge badge-success'>02.13.2026 12:51:14</span>
+<span class='badge badge-danger'>02.13.2026 12:51:15</span>
+<span class='badge badge-default'>00:00:01:147</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:15</td>
+        <td>
+          <span class='badge white-text blue'>Request Body</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:15</td>
+        <td>
+          {"name":"Lerato","email":"lerato@test.com","username":"leratoQA"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:15</td>
+        <td>
+          <span class='badge white-text green'>Response Body</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:15</td>
+        <td>
+          <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'reqres.in',cType: 'managed',cRay: '9cd3c4a4ebd0738f',cH: 'IYWWyLXk0ONHgAkIDgVa5CdVbh3C2buHU2q7LCKYrr0-1770979861-1.2.1.1-_oIogMJt0va1kQslBuWu6NZ_8hIE82yMsWH4bCBLC6qf82nBXh_P96qXbguG6I82',cUPMDTk:"\/api\/users?__cf_chl_tk=lExGda6nAY9r5YJVV0jaYch0VN1zR1h_aTcEv7G9niQ-1770979861-1.0.1.1-KbPiWIYf0TxVTrxy.TG7JJryxpQzr0kRkHu_HEtatY8",cFPWv: 'g',cITimeS: '1770979861',cTplC:0,cTplV:5,cTplB: '0',fa:"\/api\/users?__cf_chl_f_tk=lExGda6nAY9r5YJVV0jaYch0VN1zR1h_aTcEv7G9niQ-1770979861-1.0.1.1-KbPiWIYf0TxVTrxy.TG7JJryxpQzr0kRkHu_HEtatY8",md: '8ODa.SW38SlT6W5V6GOj4TVsg1MRl2yN_d5Ifocll_w-1770979861-1.2.1.1-jPy_Uz87e6gFnV9k3x.C6pxDYW9UUK62H4__mFGRt8FXBxEmXWKse9C8qSkeQmBJEohlyAF9WnkXYbtYd_iXLTbOgBWK8w1.nkzMpKyg.Ay3cM7n_mvPG5DstQv64lbag13jSzqV5P9ybf1_nrNMy3vYlfq1Q1cU7art6UBdwhOAGMUiJovG_iSCbLGNuB6G7raw2Jf1ZsQUeZ3uvCBCunfsRHbG.VXrwwoiLRCM3zrSLFJk38ZuYomKKyfaOgS4iJ04qadZXEK4tGflNHKSeG39vA0JPUAQv1Xu.bSLHwT.42t1VLJKZb_pkur2D3t1JAX9R1tM_Y6Ns2uGKfUZXn0CitJpXI64fvEZpBP_2OMjxGyuaboLP1I8QPP_NXc1JdJ.RwEbeS5Jsz_KvlNURdplNaDOvL2PpDOuj6wriOjqBEM9tFOaNPMUGLpfWKDAjdzFc3QOFwwf0.TG_nSDMu.K8Nl7lr5dgryvSUgdkTORF_HSxfhFLYCDPUoyZynrghNBX36TUorJ.SK2tydLXXeAM8vBXQcQd0X5fsBINcVc6HVg6woESjELd1mXr7o6w5MyUQOGsUGDfNsqMYM3FtC738AvmIAQYtTNItKTFX6z6RSS3gvBLBtyA3AjNevi1xcIu_8lWQY9.mIGXRoh.xE3Sk8oKkMTxHn4.EB5IloDhzgoWQFC9cbBlehyZhBQfyPWnXVSRy9ZMaYLvL223hUqivvfd.oO2m8HNEgN1sm1A51jEfLsm_ffDwDlnCY0ZZ0hg.TnedhhMS6yu9pHIHOTviYlBi.VUOCifF6uEevm3gjXAot50xDHJatQ8cLydKgud1nQIA0Dy7Ym1K05XsrkcHszGrRqhSkEux1Nurzrw4nbx7CNBuuTY7REMmscJG70fIj5oHhJHnmobSjphQ_0fbMdGyqBXtcXzQhiGqwP4ly4l8CYKR15FHr5v2Om',mdrd: 'tq_VUpSjW9d7K0iYGYb7CnYrrvnsSctI8b8t7XljAjg-1770979861-1.2.1.1-gnsx7Vc6UK5Gi.fsH4ueg9B2jat_X06J7N634WCSxoailKjZboI7WCqdgqGL_8FWvziF5eUvqxccAjGojVnR9n8979zSv5o3q2MWNmbstFzX72inFz.YFZz54SIq6Ox6GVWUwZW.vqjBqavTAAaqPNrGx4B_5FzwHcHo6kUDaWYv4jSKzz3AXbn12I9giI_qRAdgRBQw630BpRNRaQ3kjAukA0bLrOGIWa6exonRgpjM.Vn5TGPxoe.ZttSuuoedukJ9MNJ.LLhzqkRiQNm2sr5SkbYRGJXCLohzmZNsqYBTIn3.gfFPSHfznu.a3pB5mJ1r_JgDxn7xZyFnS2zw6D1xcvs1_wioXMMbEdZQ5ESA_T9N6kySgALUKGSHbLN7ACSJEe4idUIB3pp9PWqyjAK_DhXVKUmBTNHM8XH934VyNGb7Dg30SQ8ReLqlQU1Go3PBEMz8iDN5MDH1GLXjgoOHYRp_f0saf.PN5KenyrODWvQfjUKZ0a8ZZj8qgVZjffPl9iCo7evGtW74LQFDWcvNEXS0NUjv_7fVWir_TnXcnbWvl.22kTPGLMZxZ3VbOmoyUokcPXF3fk7il5Oe.Gh911pbMyfcJ_6lz6f0INlmrMqZfmE_vT0gDwNhLzvmbBgY5IkUQtVvUgZ4WMr6u.cREgm4ZkqAs9m2xDWrsOugGOSmJFSW4z3hqcjb1iGfwfEfvEu5v.ZB2P.1mnebjpo6u9Tk.NfxQLEDc7x7bgfsFW3Q7X4s3WzpQCQrac5mneHrNeZlIQHVqj4mnZTPXIyCeKVa_QNJCMs0D1efBAvaTS7D7lJnAlTm.KRYO_fCfkoSwaTZFoQEr8tGsOCTZtXKUEgtv2K3LbcSqbPH27sGcb1omGLw37ZDdAmYlyaGQV9nrPSk1R42ZlMgdFaTxCqRR8ofEOnq2rnHS64J3SfXq_Qkh1UwlSZgrsz53qpzEARP9fE9E0NOolwybn2NEmm6I.Te9jWVRQp9QVw67HW26zy2oeaWsIUU_Q.1GyJ2yr_PldjAoEHfTqPhk17WYGdoQ9G4SqYjT9CFBtxwS.os4YI7GO0cPHNdWkolTlh.7.8pOV_NghKhc.cbB7XnNR9L7w6xag2z6e4.DZPQ1feAxcG.wldrOeTngcgqgaQ_LOQft1ijxrjPV5HfEAFIprdCZAbkd6346NtlA9a_O3wuYxRQFVEMzpfOSSIdDzGVYjftaw.sIeLtMCkIMwRxo1.TbL_FkX2dUNkmGoKugZvPRPdT4o5FZp6C8GbENaIhAoIX.gRQyn3wU5fruZkRelJm.mRGfkB6HyHEGG1YNO6zqzi9Ih3Sn7KpoK_8It_fWr49A7pxSpi03Cqn83CLWS6d6MNiDgVQxS3xm_5v4Lxvtt_Xa8uNP4I8fl0zF7rRxmAKpiA77GQBryq2whNICLtdmBsj45ytvDVrF1ONQSE1wyHhYwLXKXIHwHnXjNoV8YVfy3vA7_.SpqNyvQGnD35L4S70h3Db_2Qc_Jfhllsu31zRN9QabGf0AZG_SL9nQj4UkVx531JpBQTWqYWE.ls3hLNJuXvPH3ZqJ7yHctAFzFVgz5EDiKPnGiHraAGsdvMGSnoLKh9Yu3L5Ej8SYgjPXpHrpJM6xMcrXiEsX_3cidC8A07JQYbtXGzT4Yk_lCDX.sN6jPpvhxJACPB0gJfTjtI2AnhpCmjB8QDmVRiq.2r148qK_caRm476r4P8hCGICsdD.2aPJMNgvqs4mMFlsGyxeMi.7ouQ7nFMc9AMpKubRFToHpDEVFgyDsJmlkBYGeJxINCMCQkUzVS9Ad6IEzaWOGV85IKdPC_YJINRoZ6PWhPG6TOP2muDzsFHMSUAs8xyGsDfrfTIA992qBXN5XldO65EGL2KgeZGDz14tBf418jhjoph1Mp4sdNS9JG6lYJxVlQM.DAphikQ9HcqH10gIoQ6zbr_jWV3vzupLXCwnTHt.zAccEUg.UFBaia3O5RGnWKSrRAfIv7On0Fih22jOS0x.CZg85kx19oF15XHr.5fFkNVZJHcRTAdDIALsODvLEFEPYQWHpKs0927Qv5epCXOPcze6g0XIKiK1TllsmwI9iiejZJ7EsdYy63uaqvsPDwUUq2P6C3vVae4LEO0iOqDHIQZfncpeZG3Ak2NaxfAm6J5vwktgWLaHqzIJbKJRrXcpNKV.XWKsc_xx5EIq2._dFlvefk7YJBDZ23d86XorayNAh0jBvOVhbbgDVtPslZYhRtyTvUA8JZnaJn1ctBbgHQnJZRx8YKMfnDdNDWICsVAfKaPA8wV9FYqY.eEL3fVPwWHR8QTlIP4kQVVdhuP1T7ZYJYjV4ZNQU7fLWXoxFE1RqMDndEDrGTKdI85PyHS4gYnKKGOmYyAUe1LWPMz4m2hNcXr1B9_6ncXSkcWEaq9mDc8hlF7u_f3CsL1l8ChTDRRqd_CkRSbNYYsfsWIp94FPGbIYypIsIPHLW2HTFpaMIYJipw9l1FUdJSC8JuZYjudF3UQ_vPodlbM53rAkNhBfZCK3VbX3gAYW_Fi7pMQfFTgQeSaWvsr9odoD_nYST1jS3E9HoLAAD_f3KWWvSTz5vgGQ7g',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=9cd3c4a4ebd0738f';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/api\/users?__cf_chl_rt_tk=lExGda6nAY9r5YJVV0jaYch0VN1zR1h_aTcEv7G9niQ-1770979861-1.0.1.1-KbPiWIYf0TxVTrxy.TG7JJryxpQzr0kRkHu_HEtatY8"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:15</td>
+        <td>
+          <span class='badge white-text red'>Status Code: 403</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:51:15</td>
+        <td>
+          POST User Test failed with status 403
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GET Non-Existent User Test</p>
+            <p class="text-sm">
+              <span>12:51:15</span> / <span>00:00:00:072</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">GET Non-Existent User Test</h5>
+<span class='badge badge-success'>02.13.2026 12:51:15</span>
+<span class='badge badge-danger'>02.13.2026 12:51:15</span>
+<span class='badge badge-default'>00:00:00:072</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:15</td>
+        <td>
+          <span class='badge white-text blue'>Request Body</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:15</td>
+        <td>
+          GET /users/999
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:15</td>
+        <td>
+          <span class='badge white-text green'>Response Body</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:15</td>
+        <td>
+          <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'reqres.in',cType: 'managed',cRay: '9cd3c4a5fe2473ba',cH: 'Co3DB57HA2CJU8XI.mxa745mUZrPLbllzSz13ZTndSs-1770979861-1.2.1.1-blWBoBGFFAg9gkbIncdOnrjPqAA5AlpoxEfBCft23GbihtcfAl6r2Hgzbl2c4L2t',cUPMDTk:"\/api\/users\/999?__cf_chl_tk=ebC0VfNzHXRr0Uvxr3xDknPfdIKoLPKw7YMBkF.mvII-1770979861-1.0.1.1-DEC38CfGFyJpWbid0YQpiMjUO_BAfIQFttDdC4KI3o4",cFPWv: 'g',cITimeS: '1770979861',cTplC:0,cTplV:5,cTplB: '0',fa:"\/api\/users\/999?__cf_chl_f_tk=ebC0VfNzHXRr0Uvxr3xDknPfdIKoLPKw7YMBkF.mvII-1770979861-1.0.1.1-DEC38CfGFyJpWbid0YQpiMjUO_BAfIQFttDdC4KI3o4",md: 'hWUnFPpF42Bi6AJ09vwsPSeECKCvbCIviDDh2O7KPBk-1770979861-1.2.1.1-gU.nKFtVybY7vozsmc9an1xV4UtxYFxk0fmUkkkDaFERMQqfnvBW7jeijKMstcI4m_mI9__.zenuC2a8zmP4YEkJGlCE.sPY_9k8wbXLFC9s1HxZpkCN3_rXoTfn.iX9occCkMmng3B_ULNTfP5Y1c1RXEXCu60bj6pFHnUDo9wiIEwKKh8yJszao6enpWQSs.ILlMbfrU85XZ6acVzo9C.AYlULBJW79agFN02LuadeaSVfCnwvQP9qy6c1gzM275flo13Tm0tnm_76Ajt4vibvvc9sOKjJnUwMbTTgm3m6GKh6dH8EWa2q.g1q9WWogeKN_HkUrif8NA7fDyryFFaM60wvx7VV9xynTryGo1GWyDJ1Z48x0yRCGDblPgLrBsTX4ddijQmLTVwnA11j3cTqPyEjquX2nl1.K6vilGiuXTkWBsRQfoTX_bM550sX1kaJOcsMccoPbc_vrD5gbimZO6A96Ru7a6gjSQYayFvDuqQvQZB7wXueHj8ETFvo05d3P.Abb1aEUoOj6dYMm_0gsNy7yqiYNEp8P.DuDDO.FW3vfehZy7b.P9rImFAvocQhChNSrZajAwF2QPany4jkW2ukgLrLP9pT1m_bfK74MmmUN48LKspp83Y8yCHVAVWhe.OP8R3QrlCjl_KXqxc8CZ0cLsqRjLVlLfuS.nScZFfnJyfBwn8foI1mulF2qwUNrX8A3FKrQXqMZ.Z.S6Vs8g4E9EyUyCTfXuYN_C6SGHmX8TrLvoE63FhdMIIubRltkUlbBOcvBsxHZwn.SkXI2v1ig1zamWd9gjcfb9s2fjvD4Q4OG3uRLkHd1FEg5YZCUz9cYuwCcpqSXA2ipIaOQeDvlTmlXrv73ApFN9UFgtJ9_8gtFrda4av.HiaAh5FYFOWpQJoWJNXS3GAgLpqe_ckE..lpgbbMSvmt1ry_xeOOz20IVjHbUPwEIMnB',mdrd: 'JUgc2mS9SE2nkWBoPDOC1KkHltxtmrcwBgOyZ1K7pT0-1770979861-1.2.1.1-jvMMOKmvtXqG84WITndCg6.cDuDOg20Mv3bgkXTmcdsat5aRCJVWMCQDJZXznDdyL4sE_Iiqr4AcVUoLO_Q_FKVCHvyZrbRkJ7.twUm4vHe.TNsmR4xh_gQ6S8VKRpa4p2Jf3u57ZjKX4go3z56Is8RbTq.Etm9ipp6oqa4nEkjLUeyhDGScTrdMuPp4vWthfaDitbz.It6GL2np1vdowZBtSvCUgIY46uiCi8ULpDZ3AigvmF_MyFjvNNUJ.mIix.J0fwz2RMSBfeYCyjri0PxP7ZYJgC81TLUli5ocmzvtJ3Mk5riIhmxyXenfMRkVHgflMylUMnKdhkVvvMiCTvksBOANWfFr6FeNp8FnXWHcr6Qm_gMrFfUDGZDA479xO9D4XHj6T9M0lhXHyGWz6.yNKiT.wO01l.9lklwnn.ZpqTBy.IF8_S2PG0BplOgVBus67j1VGWvx3sBKnEOtQvC0U77VUdDIgwpr5bVz0HDO2DVnpiJQiFyMfLWfJ7k4HlM5V6erTh5k6KIZffdmepOBsPgmuYbiTpXyQP9dePZWw01U7d_kSRQBmK55L.Sg2j8_0i_vWf0ERa.zd7OrUlMi7PvgjR.K2LbCnyPAPgpKuFkgyB7k.wxvyUEJzEo0z4apxk_Ujct_uT4_iLGfpiU9ZtMbvwGVsgtoQ6CfeHwsWhZ7l6tTrOBJ262UdOQOHdO8E2DrOUUL32pB_J9WBka7yrZbIgFzcKcgxwDHNWSRJCUAWVdw0_1DtFhJsy3UhKnr4VpLEUrsJd5OJeSRB86nBhCmPoLugvMXFVX86PTCDqI_yxhM09RdXEbuek3.fWYJu2AMdStj8HXWMtKjvjH.JryTLUxkFkbBDsu1OIIXlvmO4OPLQbi9sX7Lfg9ItBtoexB2jXbf26lxWzhArAwN37GdhGzA_2pbLtoLIyPYuEx0QtsfV9LIWJGCYi1HsN3leskEE4wRTdjMQujrRQ5UtKIu_GoCoxJ020ODJXseJbBFMSUxjYbOGxMGPSxUVkfEBOOUb.syZNQm7qYoM0l7EE_LHLRvAUB9E1HYKd.tZjfBtUlKh4tTOQejz3JxTlxxPqorvg1VwJvgPH3DWK6HKknBFSq8DtFqDPPYu4LqHtwcyleF4nQGSvcexSKfhEtK7xxFP18ybKY6Lffl3rbDtKLRCKVVgvuFyDIyBp3Qz5Dx16ZO3ewkU9E5V1ikDD59zjiovqUnKWfsbKpO1JwOciMxvxM2kZa55YeZLUTuMn0ElkqnIJ5SwHejOqrjWwnRS1dZSdePd9a4XRzCmBE1EbqaP.v9x5NT9hA2p8dU.RCc9IyHW1j3kTqhLJTgJJgEPq.lXf6jsbw_ue4x9NYU4oz2ezpH_CxmhuPWyB5LVt.Hry13Ra6rEkyCMbZbJLKnZ7Vb0swiKMeKS.kLRp7W5p7WucbQiWGRWEEiQpMmlieeHX_6Hp_1Zef43mUOyfgb.PqZ9DGKAmM0XUkxphRSJbBY_b8iu0urjvJ7pnfuejE2a5n7NmSevsHkV7h3ccZm.9sTSr1WJ9HfmrZAS..2zqXvBCrlcu6DELeWUcR4MP1QicGuFBhMcEoaG7JsJaXF5tOuytm_YMXaTIGO7xbbaf7nRT8CNe1FMnHS7KctVhoFLqrsuMA0zlcj.wxWqTVTSznec5KOOGSYB8m6u0o2fJNk5.VVJtYTTAL63U0FVWCfiqW2kSs4lwa0KJIW7oiyG.YjKLPzbD3Z2D.jHcBI7OXNrztF3fhMvqGtXVadCXXxCwKEmfzFxcvZMS_p_KXSlJQ0qUde9ZQol.JirlMESvwD6hlGfEgD6bREMbxAqxuhflpuYq3TJ8fvwNjbeTncsA2CDgeMf7LeFMg8Sp.Zjm8gbmNSPPm4A06AU9XedLfNjpl6Q8nEOGZegLI1L7xrIgyDNJXQqlj.QAh9ZFYu2U_oKZdRFbbEbC1m_s771i_BxjwJ8GT_d1ZWsFvqEovFMsjG_aN8V8EQ8fPUo2Xk_pgQUN0TIasxZ7ULfIN4FuJRCfG6gb5blpzagUF0UQUAHpTFsyubM58KhEblzo8EdClIJyFP5YVlG35nPfEJ59e7DkVphG7AOq6jIbtlzyOBbQTttf9ZzSaS4ViBtze.4YyOuYR7f28SBNXBMaBlNxAYWXY_fD_ioWGUOGWMQZW49YgylkSlU9i7OOuAY.jftq91ozPYmhzRkKdxCpQ_nrN1maS58B_TJiRRrvPgI4iG4RxuirlwdKwRSl8QaevgkUjqdlc5C6ZAJH0cPtVP79.e5txUXFKtSXQ_dkgL5udCDvi49wtKnfE6IMYEHGK4ksfDn3t2dH8xgRsq.2nxoyTPT8MLLP9desWZddw7VPPbXtghFd_9VA4lvi.ATYakTb8PcFgkf6s5dcqg1yOfUxK9TBo_g_3Rb1JBB6rvk44uP3Nl0TIDVpCYTL5M5WcrJnPnRTCtltaFDme4Ml4Ew5RsIwbsEE2Ge5AWO9B8gxnDVVXafoTqZBjy48bskFIT6SvdXqgGxsmYK4LJuWA',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=9cd3c4a5fe2473ba';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/api\/users\/999?__cf_chl_rt_tk=ebC0VfNzHXRr0Uvxr3xDknPfdIKoLPKw7YMBkF.mvII-1770979861-1.0.1.1-DEC38CfGFyJpWbid0YQpiMjUO_BAfIQFttDdC4KI3o4"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:15</td>
+        <td>
+          <span class='badge white-text red'>Status Code: 403</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:51:15</td>
+        <td>
+          GET Non-Existent User Test failed with status 403
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GET User Test</p>
+            <p class="text-sm">
+              <span>12:51:15</span> / <span>00:00:00:554</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">GET User Test</h5>
+<span class='badge badge-success'>02.13.2026 12:51:15</span>
+<span class='badge badge-danger'>02.13.2026 12:51:16</span>
+<span class='badge badge-default'>00:00:00:554</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:16</td>
+        <td>
+          <span class='badge white-text blue'>Request Body</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:16</td>
+        <td>
+          GET /users/2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:16</td>
+        <td>
+          <span class='badge white-text green'>Response Body</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:16</td>
+        <td>
+          <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'reqres.in',cType: 'managed',cRay: '9cd3c4a8dccaf059',cH: 'GY_mLk45a0O7kGH7lPAF.0QfnQNu3c.d58zjtUUWgeo-1770979861-1.2.1.1-34DsFloXN0N1yPQFjSxiqVIhx_uBjgytIrOnU4__ZIg38VMGbVV72jSSjNctBmXs',cUPMDTk:"\/api\/users\/2?__cf_chl_tk=mNc2DCWFXEejg0qDl3p9nMsSEZeD_w4P7qbq38nThkw-1770979861-1.0.1.1-5vWitm6gSi55WyK6ZOGcgDSQ39Wy7XzADo6snifvkFM",cFPWv: 'g',cITimeS: '1770979861',cTplC:0,cTplV:5,cTplB: '0',fa:"\/api\/users\/2?__cf_chl_f_tk=mNc2DCWFXEejg0qDl3p9nMsSEZeD_w4P7qbq38nThkw-1770979861-1.0.1.1-5vWitm6gSi55WyK6ZOGcgDSQ39Wy7XzADo6snifvkFM",md: '37ZynGnyp8q14tYPE.6ahKju5taNpE22yE3CYgmi5VE-1770979861-1.2.1.1-wqOf_94oxuuYVU4TUj_MN4YJcqrHOTtEGEPJHVeQjQTBYzgy0EovqFo520YZaKA.Yr2zKU5_j.XpkvqTAuBE2MwbD2n1C0hqF4WRWKcrqKxitC7YCkM6O10tvORq5jQeaUaaF8xM7GoIjtE2w0SRBSNUJUqtMedEjEgfsMzpoeV5QnGKw_4KlWFWk1YiAYu_Hk5pKR21fBLyAAETa7RX5ZalhlqPPlXL1IY0ePmMM.0UaRpyHo4J.0zGd2C2VN8zqcjHxJoENoTiatZ2avfoJLoTt4ba_0csXba_qH6_HUs.x8O0bYT1X0trPNW5sKdP5.VYYMZSWN3lbTFCoiMn.ospqF.Ax2.HHKkjbsDQlV0Bj2HrO.w25ae124SIgCtEDXy1nfjQuFi4iv_K7frYIWLcOZwTEYug13BbuKngPiwMKMXoy11.J6WbP4qzqneqyooad0eH4bsQ3hwzPESeIGhtSKPvkO8HYOEjYdau2HcZ9Rz5oZdbhCozyCoj4S5HnWAjzpEOpTX2TXror9DJAflCkCGtdnRJJ4uClEJnkfKm6OYwEowXr43l.XG4AOxk7dg_MyiKHOQjONYFk9zLzedNzKy7FsTD7CCfoTAcvZ6pBIMHlkVVwI.mvXEuTSRPbQSkTIu8ZA9YUDV86_wDlMBGcEjbyiMafRBE3bPpU2FpRbQJ60WodN7.V8_yHtnLzHojYIRllcBJ5hxdg7nD2WheMqU_G.SJcpbUuN03i1Lpp4e9sFDdmL8RU2eT1VrhjDnOEnB9QKWN.rXzemYSHjetY3_ombDJVTnoEJUMhO7FmDidHVAkbIWXTaBh267tVJG0iSVZIdRFLZmC3LGiPzoNGeZ18w0RtOay8v3_igpZqslT7Nrmq.BM3yjJ_u2R5873oLMMj7i5qAFwvZMnlTcrxU5zh5_v152vm5inReOxFY6sNUodK7CWxQQQzIR4',mdrd: 'OzAzTmUY.Y4HA7PybVXQ3OK0w51znjSP1YYb3rqTp8M-1770979861-1.2.1.1-xmOwTP.wjqZoFrms7P6JLPnUquilntTXrJyqQhe3MvEhbjmxliLoZBSUctAhfpCDm0GvPHZR6AKD0KorM0vK7wIYrDXQ7WYYc.lBqCqsEH2Wb_2CtTfLIqGdTVhV_1P0vIvpHiMuEPF2vCUEE.M9qw4Su6EVc8uVTg5Yjni0kcYRk1TY6OnvkQMhtFht77eeEwtXj.89QVfCOi2zd_hus.IaVHpRcRaaNH1.LsBkZ4e..3J1V9hF5JTimc1jIZHXvalBvIGhSirEnnPdTv7n.5jDAcdJrk5mAWaL1daP35PSHkl.nuOKbI8edxxgGYP6qzsExfGXP4rqqtd1beRE0BuQvAxxnbmyVlWl7agFr8gGbU8G_B9T6qYbqzzZCqrS3fbirThkJNEepn_jo79i6oL7XqgxeyBVltNqshReeTN9Dozcc36Bnke0I2dxA9la1NCCDO5_D33ulY0GQy.fUfgQK5vcoRvfnPdF9S5yPad5gcLp0rID3u4CMh62fM1FMG7cLWq803cGuxEnRNnL3vHbzkoPflFSpAj7Bxovbl1DSrKjc5TYfD.LbaQ8bLvrhq7aUzX7Tob5p3R6xc4MPJHRxl9KDMdcgebBKETZ04nRKUtUTwUQzsGKw3C9E8RxABFGlFyRvj33t8yUJw7uEJ_9cCoqWBIe8rE2S7oyV45_09Rojmb98rSnK_dJ.Hk1oRdhIRHFmhmAvZfG8hE.Qyd_2ZqOxEaluEWlXUid8mAnezwSZt0FNDQQsQH8ml7q4v8KlxOHkn4.f3Qc40kjtAiX36_i3.KuB0ZTIpgzb2v0Uel04BT1RQEL.lUbOBxArF3WIUG59yymCp.mgCc99HzDLYbwH8Mf3er1tM2zzQBMsurJKxEQQV5wE6Z5Zeic4VUhP1jvoqn1HsOee9Lly3HCmmXVdXQ5nGYJA66Qu.ZT2ItTkBq_SYBePYYIyPLW0w1VHbDutAZTW3ciBKLBLXI.cb9cury.4iVsluXl9FMQ2vqlVGp.QWXbDaqBV75uvEiK9eRTMD_DLk2_hKNDCOEwLq500XXtzbiVcgpXo6gpCvxaOw3t6WHKlfKhEIibkL39RSqiBbt5qjRMcGAcBymjWwFXi4NFfcOP0nckN.B2Tpmk3S4HEuGqrwTHL9MB1KKakEtSD_EiuVcVFCMdiw2uVm7wwJxPWkiYTPQmfCsEJSx1nViL7tGwl8UltExdi0awoSYDGhHCdVJfSO6rOPrwFsocKUTpuxHE7zcpnTqCjnXyGj1a24bVr.MRnFtUdXfzxpOPuCvESIxoNFKdQfafONAMcG_r2NF2.7Kn0YmXoO_JD2EvCNgaBpJHQv6qxFKQ_NxWK6F_ldg8gEj5XmbTOtKQTOT1cHsyXuEPZX9BeCb.7e2L2918wn7OwRi6BlAVu7Ond89fDzpze5rjgpRB.HGjilmGjIr58kMU_ACZ5syi0FrRCkPPmv.vGJ.rQdbKZ1S9L4At8AU5WisJCohrBIMfFO8UUxlmM6Wjq1j4cfzFDZ8q0xiDVTLXLFEyAlNBExNLzMAbuN1cDry2dCBMfNZQp24sSr6LT70DNx4aGnieClUR3cux_NtjUa2QDSfZzFckCCaXEmaj_rfd_EHkLWkt6J6PrRG_GeE0yKriJrKLK2Ab4Qvbp9ujkEYC_IlYw1l7KKyT0a0YnOPE0atK5XF_xJ.bRPG5Qh1tYpdHWCCYs3bj8iO7BOP974XJAvho_LMGRMtIUcVRj2eSwfggSbsZbLspyPwIomPIbm3n7zzSBrdAPIwiQFJQ9Zxr_GU2vMPuKV89xPA4MWJMSb1sqElGC_x9fKtXb4orvihPqFZRePMsDmB.tfynYhqA7lAK_PJrDPiW3WyCXfXRJ9w6sNdSVRLG20JuqGap4ECF5rcdCGJPD72r9QPMLrTq5nL3BHxIlXeGTQLG9n5JsJPMDBMzb_eMKRIdYfBTWCNWpQV7pPgEOOd_mdDqbdefBwXiMeMji8LoHJx3cYlsB8SNrmFx_z8nLPR3WoRI23S8yw1.rqyk0zoJjM8UweDBYWHNl4dlN_BJy4s2c.5hNnCypnonyip71EzbRKtHmlKsp9UrtN_e6aZ6q7oBOuN0KadT89eYePCzQR_Vpm4YSxcIEdi6p_DGBtaSgop3Wwn5z30caL23GMeQlYVJdbOf4PXcxDfIUq647HVVEThUzP6HeonnxNZkP0zsi33E3BkExe.jddNFAAqGy3n9kCeL3BBlytXykz6Lyr9OSGJ06MzEi82HwECGngVqrgNS1ToV13x3iish2hRPZkBChujTH2tyVWQqfYzrQ7ssuI_tlixheNmC4PcgSthcvoF5pa2mzrp65sgfOTolCHP_qoSlVqT9LRbKnvxA_.hBS8e9Ue5pk7O1QaIAx2exEmNWiproXnyHDK0LZ7uVePi61xlZfEzrHxuAVoryqennIlSG1wVlWT.9D3BKGsJPxeGvbDV9.C2SkZjbTjj2alCZNTaE.y1TlgHhZgn5IWB5QJ9tXoVPVugV8RwVamsMqEuW5lujw8oM0arrjYiz9E0OiWH6',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=9cd3c4a8dccaf059';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/api\/users\/2?__cf_chl_rt_tk=mNc2DCWFXEejg0qDl3p9nMsSEZeD_w4P7qbq38nThkw-1770979861-1.0.1.1-5vWitm6gSi55WyK6ZOGcgDSQ39Wy7XzADo6snifvkFM"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:51:16</td>
+        <td>
+          <span class='badge white-text red'>Status Code: 403</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:51:16</td>
+        <td>
+          GET User Test failed with status 403
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 13, 2026 12:51:14 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 13, 2026 12:51:16 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>3</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div>
+<small data-tooltip='16%'><b>3</b> events failed,
+<b data-tooltip='%'>15</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"POST User Test":1.147,"GET Non-Existent User Test":0.072,"GET User Test":0.554
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Tester</td>
+<td>Lerato Motaung</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>API Automation Portfolio</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 0,
+failEvents: 3,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 15
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
