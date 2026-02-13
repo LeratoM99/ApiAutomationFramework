@@ -25,9 +25,6 @@ I am a proactive IT professional with a passion for software quality assurance, 
 * Ready-to-run on any system with Maven setup.
 * Clean code organized with BaseTest, Utils, and separate test packages.
 
-### **Screenshots**
-
-*Add screenshots of your ExtentReports dashboard here to showcase results.*
 
 ### **Installation & Setup**
 
