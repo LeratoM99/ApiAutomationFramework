@@ -97,6 +97,7 @@ I am a proactive IT professional with a passion for software quality assurance, 
 
 * IT Customer Support Certificate
 * Data Analytics Certificate
+* Software Testing Certificate
 
 ### **Connect & Portfolio**
 
