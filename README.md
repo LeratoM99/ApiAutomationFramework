@@ -1,5 +1,3 @@
-# **API Automation Portfolio **
-
 ## **Lerato Motaung – QA & Automation Portfolio**
 
 ### **About Me**
